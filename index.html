@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이대원 소개 페이지</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --accent: #f97316;
+    --accent2: #38bdf8;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    background: linear-gradient(160deg, #0f172a 0%, #1e293b 100%);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 80px 20px 60px;
+  }
+  header h1 {
+    font-size: 2.6rem;
+    letter-spacing: -1px;
+  }
+  header h1 span {
+    color: var(--accent);
+  }
+  header p {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 1.1rem;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  section {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(56,189,248,0.15);
+    color: var(--accent2);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .sport-card {
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid #334155;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+  }
+  .sport-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+  }
+  .sport-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--accent2);
+  }
+  .sport-card .player {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--accent);
+  }
+  .sport-card .player-role {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .flag {
+    color: #fbbf24;
+    font-weight: bold;
+  }
+  .player-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    display: block;
+    background: #334155;
+  }
+  .profile-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+    margin-top: 16px;
+  }
+  .profile-list li {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .profile-list .label {
+    display: block;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+  .profile-list .value {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--accent2);
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .timeline-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+  .timeline-item h4 {
+    color: var(--accent2);
+    margin-bottom: 4px;
+  }
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid #334155;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>안녕하세요, <span>이대원</span>입니다</h1>
+  <p>운동을 사랑하고, 과학을 탐구하며, 컴퓨터공학을 꿈꾸는 사람</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>🙋 소개</h2>
+    <ul class="profile-list">
+      <li><span class="label">이름</span><span class="value">이대원</span></li>
+      <li><span class="label">나이</span><span class="value">17세</span></li>
+      <li><span class="label">학교</span><span class="value">명덕고등학교</span></li>
+      <li><span class="label">학년 / 반 / 번호</span><span class="value">1학년 3반 18번</span></li>
+      <li><span class="label">MBTI</span><span class="value">ISTP</span></li>
+    </ul>
+    <p style="margin-top:16px;">
+      가장 좋아하는 과목은 <strong>과학</strong>이며, 운동을 즐기는 활동적인 성격입니다.
+    </p>
+  </section>
+
+  <section>
+    <h2>⚽🏀🥊 좋아하는 운동</h2>
+    <div class="grid">
+      <div class="sport-card">
+        <h3>🥊 복싱</h3>
+        <img class="player-photo" src="file:///C:/Users/USER/Pictures/Saved%20Pictures/가르시아.jfif" alt="라이언 가르시아">
+        <p>강렬한 스피드와 파워가 매력적인 스포츠</p>
+        <div class="player">라이언 가르시아 (Ryan Garcia)</div>
+        <div class="player-role">최애 복싱 선수</div>
+      </div>
+      <div class="sport-card">
+        <h3>⚽ 축구</h3>
+        <img class="player-photo" src="file:///C:/Users/USER/Pictures/Saved%20Pictures/네이마르.jfif" alt="네이마르">
+        <p>팀워크와 개인기가 조화를 이루는 스포츠</p>
+        <div class="player">네이마르 (Neymar Jr.)</div>
+        <div class="player-role">최애 축구 선수</div>
+      </div>
+      <div class="sport-card">
+        <h3>🏀 농구</h3>
+        <img class="player-photo" src="file:///C:/Users/USER/Pictures/Saved%20Pictures/커리.jfif" alt="스테픈 커리">
+        <p>스피드와 전략이 함께하는 스포츠</p>
+        <div class="player">스테픈 커리 (Stephen Curry)</div>
+        <div class="player-role">최애 농구 선수</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔬 좋아하는 과목</h2>
+    <p><strong>과학</strong>을 가장 좋아하며, 그중에서도 <strong>생명과학</strong>과 <strong>화학</strong>을 특히 좋아합니다.</p>
+  </section>
+
+  <section>
+    <h2>🎯 진로 목표</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div>
+          <h4>대학 진학</h4>
+          <p>컴퓨터공학과(컴공) 진학을 목표로 하고 있습니다.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div>
+          <h4>졸업 후</h4>
+          <p>평범한 직장인이 되어 안정적인 삶을 사는 것이 목표입니다.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:16px; color:var(--muted);">
+      <span class="flag">[확인 필요]</span> 희망하는 구체적인 대학, 직무(개발자/IT 직군 등), 회사 형태(스타트업/대기업 등)가 있다면 추가할 수 있습니다.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <p><span class="flag">[확인 필요]</span> 연락처 / SNS / 이메일 등 추가 정보</p>
+  <p>&copy; 2026 이대원. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
